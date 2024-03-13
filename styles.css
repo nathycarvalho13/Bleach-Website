@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
+* {
+ 
+    margin: 0; 
+    padding: 0;
+
+
+}
+
+
+body {
+    font-family:font-family: 'Monteserrat', sans-serif;
+    background-color: hsl(0, 0%, 0%);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    padding: 2% 2% 2% 2%;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between; /* Alinha o título "Bleach" à direita */
+    align-items: center; /* Centraliza verticalmente os itens do cabeçalho */
+    margin-top: 20px;
+}
+
+.cabecalho .menu ul {
+    display: flex; /* Coloca os itens do menu lado a lado */
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    list-style-type: none; /* Remove a estilização padrão de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho__menu__link {
+    font-family: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    color:#22d4fd;
+    text-decoration: none;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.titulo__imagem {
+
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    display: block;
+
+}
+
+.descricao-anime {
+    text-align: center;
+    margin-bottom: 50px; /* Adiciona um espaço entre a descrição e a seleção de personagens */
+    font-family: "Krona One", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.selecao-de-personagens {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.selecao-de-personagens .personagem {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.selecao-de-personagens .personagem img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.selecao-de-personagens .personagem .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.selecao-de-personagens .personagem:hover img {
+    transform: scale(1.2);
+}
+
+.selecao-de-personagens .personagem:hover .info {
+    transform: translateY(0);
+}
+
+
+
+footer {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+.footertxt {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    text-align: center; /* alinha o texto, propriedade center pro centro */ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    
+}
