@@ -61,4 +61,5 @@ document.addEventListener('DOMContentLoaded', function() {
         personagensContainer.appendChild(divPersonagem);
     });
 
- 
+
+     });
