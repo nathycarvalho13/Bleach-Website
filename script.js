@@ -61,9 +61,4 @@ document.addEventListener('DOMContentLoaded', function() {
         personagensContainer.appendChild(divPersonagem);
     });
 
-    // Reprodução automática da música
-    const backgroundMusic = document.getElementById('background-music');
-    backgroundMusic.play().catch(function(error) {
-        console.error('Erro ao reproduzir a música:', error);
-    });
-});
+ 
